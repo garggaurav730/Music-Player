@@ -1,0 +1,1330 @@
+<!-- HTML STARTS -->
+<!-- DOCTYPE SHOWS THAT IT IS HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD STARTS -->
+  <head>
+    <!--METADATA VIEWPORT STARTS AND USED FOR MULTIPLE DEVICES WIDTH-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- METADATA VIEWPORT ENDS -->
+
+    <!-- TITLE STARTS -->
+    <!-- LINK FOR TITLE ICON STARTS -->
+    <link rel="shortcut icon" href="./images/disc.svg" />
+    <!-- LINK FOR TITLE ICON ENDS -->
+    <title>Favourite Tunes</title>
+    <!-- TITLE ENDS -->
+
+    <!-- FONT AWESOME CDN LINK STARTS-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- FONT AWESOME CDN LINK ENDS -->
+
+    <!-- CSS FILE LINK STARTS-->
+    <link rel="stylesheet" href="favourite.css" />
+    <!-- CSS FILE LINK ENDS -->
+  </head>
+  <!-- HEAD ENDS -->
+
+  <!-- BODY SECTION STARTS -->
+  <body>
+    <!-- HEADER SECTION STARTS -->
+    <!-- Hamburger Starts -->
+    <div class="hamburger">
+      <div id="menu-bar">
+        <div id="menu" id="button" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li id="queue-hng">
+            <a href="index.html">About Us</a>
+          </li>
+          <li><a href="index.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
+    </div>
+    <!-- Hamburger Ends -->
+
+    <!-- HEADER LOGO SECTION STARTS -->
+    <nav id="navbar-section">
+      <a href="index.html" target="_blank">
+        <div class="navbar-logo-portion">
+          <div class="navbar-logo"><img src="images/disc.png" /></div>
+          <div class="navbar-logo-text">
+            <p>Ninja</p>
+            <h3>Studio</h3>
+          </div>
+        </div>
+      </a>
+      <!-- HEADER LOGO SECTION ENDS -->
+
+      <!-- NAVBAR BLOCK TEXT STARTS -->
+      <div class="navbar-block-list">
+        <a href="#">
+          <h2>Favourite</h2>
+        </a>
+      </div>
+      <!-- NAVBAR BLOCK TEXT ENDS -->
+
+      <!-- SEARCH BAR STARTS -->
+      <div class="searchbar-section">
+        <input type="search" id="navbar-search-bar" placeholder="Search" />
+        <div class="navbar-icons">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+          <span class="mic-icon"><i class="fas fa-microphone"></i></span>
+        </div>
+      </div>
+      <!-- SEARCH BAR ENDS -->
+
+      <!-- BELL ICON STARTS -->
+      <div class="bell-icon">
+        <i class="fas fa-bell"></i>
+      </div>
+      <!-- BELL ICON ENDS -->
+
+      <!-- NAVBAR_PROFILE_PIC STARTS -->
+      <div class="navbar-profile-pic">
+        <a href="index.html" target="_blank">
+          <img src="images/1609508674549.jpg" id="profile-img" />
+        </a>
+      </div>
+      <!-- NAVBAR_PROFILE_PIC ENDS -->
+    </nav>
+    <!-- HEADER SECTION ENDS -->
+
+    <!-- MAIN SECTION STARTS -->
+    <main id="main-section">
+      <!-- ASIDE SECTION ONE STARTS -->
+      <div class="aside-sec1">
+        <!-- BLOG PICTURE STARTS -->
+        <div class="blog-picture">
+          <!-- BLOG PICTURE IMAGE STARTS -->
+          <div class="blog-image">
+            <img src="images/download (2).jpg" />
+          </div>
+          <!-- BLOG PICTURE IMAGE ENDS -->
+
+          <!-- BLOG PICTURE CONTENT STARTS -->
+          <div class="blog-content-portion">
+            <div class="blog-heading">
+              <div><h2>ColdPlay</h2></div>
+              <div><h5>851 Followers</h5></div>
+            </div>
+            <div class="blog-para-sec">
+              <h5>British Band</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis veritatis molestias nobis error. Nam labore,aliquam
+                ipsum maxime totam delectus facere, consequuntur odit architecto
+                voluptates?
+              </p>
+            </div>
+            <div class="action-sec">
+              <div
+                class="playy-btn"
+                onclick="alert('You Clicked On Play Button')"
+              >
+                <button>Play</button>
+              </div>
+              <div
+                class="follow-btn"
+                onclick="alert('You Clicked On Follow Button')"
+              >
+                <button>Follow</button>
+              </div>
+            </div>
+            <div class="blog-collection"><p>247 Tracks|128 Albums</p></div>
+
+            <!-- BLOG PICTURE CONTENT ENDS -->
+            <div class="social-icons">
+              <h2>Login With</h2>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                onclick="alert('You Clicked On Facebook Button')"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                onclick="alert('You Clicked On Instagram Button')"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://twitter.com/?lang=en"
+                target="_blank"
+                onclick="alert('You Clicked On Twitter Button')"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- BLOG PICTURE ENDS -->
+
+        <!-- SONG LIST STARTS -->
+        <div class="song-list">
+          <!-- SONG LIST DIV ONE STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>01</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (2).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div>4:44</div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV ONE ENDS -->
+
+          <!-- EMPTY DIV ONE STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV ONE ENDS -->
+
+          <!-- SONG LIST DIV TWO STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>02</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (3).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV TWO ENDS -->
+
+          <!-- EMPTY DIV TWO STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV TWO ENDS -->
+
+          <!-- SONG LIST DIV THREE STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>03</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (4).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV THREE ENDS -->
+
+          <!-- EMPTY DIV THREE STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV THREE ENDS -->
+
+          <!-- SONG LIST DIV FOUR STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>04</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download.jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV FOUR ENDS -->
+
+          <!-- EMPTY DIV FOUR STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV FOUR ENDS -->
+
+          <!-- SONG LIST DIV FIVE STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>05</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (3).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV FIVE ENDS -->
+
+          <!-- EMPTY DIV FIVE STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV FIVE ENDS -->
+
+          <!-- SONG LIST DIV SIX STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>06</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (4).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV SIX ENDS -->
+
+          <!-- EMPTY DIV SIX STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV SIX ENDS -->
+
+          <!-- SONG LIST DIV SEVEN STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>07</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (2).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV SEVEN ENDS -->
+
+          <!-- EMPTY DIV SEVEN STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV SEVEN ENDS -->
+
+          <!-- SONG LIST DIV EIGHT STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>08</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download.jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV EIGHT ENDS -->
+
+          <!-- EMPTY DIV EIGHT STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV EIGHT ENDS -->
+
+          <!-- SONG LIST DIV NINE STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>09</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (3).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV NINE ENDS -->
+
+          <!-- EMPTY DIV NINE STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV NINE ENDS -->
+
+          <!-- SONG LIST DIV TEN STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>10</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (4).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV TEN ENDS -->
+
+          <!-- EMPTY DIV TEN STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV TEN ENDS -->
+
+          <!-- SONG LIST DIV ELEVEN STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>11</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download.jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV ELEVEN ENDS -->
+
+          <!-- EMPTY DIV ELEVEN STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV ELEVEN ENDS -->
+
+          <!-- SONG LIST DIV TWELEVE STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>12</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (2).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV TWELEVE ENDS -->
+
+          <!-- EMPTY DIV TWELEVE STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV TWELEVE ENDS -->
+
+          <!-- SONG LIST DIV THIRTEEN STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>13</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (4).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV THIRTEEN ENDS -->
+
+          <!-- EMPTY DIV THIRTEEN STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV THIRTEEN ENDS -->
+
+          <!-- SONG LIST DIV FOURTEEN STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>14</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (3).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV FOURTEEN ENDS -->
+
+          <!-- EMPTY DIV FOURTEEN STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV FOURTEEN ENDS -->
+
+          <!-- SONG LIST DIV FIFTEEN STARTS -->
+          <div class="song-list-portion">
+            <div class="list-portion-one">
+              <div><h5>15</h5></div>
+              <div class="song-resume-btn">
+                <img src="images/download (4).jpg" />
+                <div class="playyy-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="list-image-content">
+                <h4>Mirage</h4>
+                <p>Else</p>
+              </div>
+            </div>
+            <div><i class="fas fa-ellipsis-h"></i></div>
+            <div class="list-icons">
+              <div class="list-heart-icon">
+                <a><i class="fas fa-heart"></i></a>
+              </div>
+              <div class="list-plus-icon">
+                <a><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- SONG LIST DIV FIFTEEN ENDS -->
+
+          <!-- EMPTY DIV FIFTEEN STARTS -->
+          <div class="empty-portion"></div>
+          <!-- EMPTY DIV FIFTEEN ENDS -->
+        </div>
+        <!-- SONG LIST ENDS -->
+      </div>
+      <!-- ASIDE SECTION ONE ENDS -->
+
+      <!-- ASIDE SECTION TWO STARTS -->
+      <div class="aside-section-two">
+        <!-- ASIDE SECTION HEADING STARTS -->
+        <div class="aside-section-header">
+          <div class="queue-white">
+            <h2>Similar Artists &nbsp; <i class="fas fa-bars"></i></h2>
+          </div>
+          <div class="queue-green">
+            <div class="recently-view">
+              <a href="index.html"
+                ><h4>
+                  View All
+                  <div class="hidden-dropdown">
+                    <div class="dropdown-content">
+                      <div><i class="fas fa-play"></i></div>
+                      <div><h4>Play Now</h4></div>
+                    </div>
+                    <hr />
+                    <div class="dropdown-content">
+                      <div><i class="fas fa-plus"></i></div>
+                      <div><h4>Add To Queue</h4></div>
+                    </div>
+                    <hr />
+                    <div class="dropdown-content">
+                      <div>
+                        <i class="fas fa-indent" style="padding: 11px"></i>
+                      </div>
+                      <div><h4>Add To Favourites</h4></div>
+                    </div>
+                    <hr />
+                    <div class="dropdown-content">
+                      <div><i class="fas fa-info-circle"></i></div>
+                      <div><h4>Get Info</h4></div>
+                    </div>
+                  </div>
+                </h4></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- ASIDE SECTION HEADING ENDS -->
+
+        <!-- ASIDE TWO SECTION PLAYLISTS STARTS -->
+        <!-- ASIDE TWO SECTION PLAYLISTS ALL DIV STARTS -->
+        <div class="aside-all-playlist">
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV ONE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div class="upper-sec">
+                <img src="images/download (2).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Mirage</h4></div>
+                <div><p>Some Else</p></div>
+              </div>
+            </div>
+            <div class="playlist-icon">
+              <a>
+                <i class="fas fa-ellipsis-h">
+                  <div class="queue-all-content">
+                    <div class="queue-content">
+                      <h3>Playlists</h3>
+                      <hr />
+                    </div>
+                    <div class="queue-content">
+                      <h3>Favourite Songs</h3>
+                    </div>
+                  </div>
+                </i></a
+              >
+              <p>4:44</p>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV ONE ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV TWO STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div class="upper-sec">
+                <img src="images/download.jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-icon">
+              <a>
+                <i class="fas fa-ellipsis-h">
+                  <div class="queue-all-content">
+                    <div class="queue-content">
+                      <h3>Playlists</h3>
+                      <hr />
+                    </div>
+                    <div class="queue-content">
+                      <h3>Favourite Songs</h3>
+                    </div>
+                  </div>
+                </i></a
+              >
+              <p>4:44</p>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV TWO ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV THREE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div class="upper-sec">
+                <img src="images/download (3).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>New Skin</h4></div>
+                <div><p>Flumee</p></div>
+              </div>
+            </div>
+            <div class="playlist-icon">
+              <a>
+                <i class="fas fa-ellipsis-h">
+                  <div class="queue-all-content">
+                    <div class="queue-content">
+                      <h3>Playlists</h3>
+                      <hr />
+                    </div>
+                    <div class="queue-content">
+                      <h3>Favourite Songs</h3>
+                    </div>
+                  </div>
+                </i></a
+              >
+              <p>4:44</p>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV THREE ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV FOUR STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div class="upper-sec">
+                <img src="images/download (4).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-icon">
+              <a>
+                <i class="fas fa-ellipsis-h">
+                  <div class="queue-all-content">
+                    <div class="queue-content">
+                      <h3>Playlists</h3>
+                      <hr />
+                    </div>
+                    <div class="queue-content">
+                      <h3>Favourite Songs</h3>
+                    </div>
+                  </div>
+                </i></a
+              >
+              <p>4:44</p>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV FOUR ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV FIVE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div class="upper-sec">
+                <img src="images/download (2).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>New Skin</h4></div>
+                <div><p>Flume</p></div>
+              </div>
+            </div>
+            <div class="playlist-icon">
+              <a>
+                <i class="fas fa-ellipsis-h">
+                  <div class="queue-all-content">
+                    <div class="queue-content">
+                      <h3>Playlists</h3>
+                      <hr />
+                    </div>
+                    <div class="queue-content">
+                      <h3>Favourite Songs</h3>
+                    </div>
+                  </div>
+                </i></a
+              >
+              <p>4:44</p>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV FIVE ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV SIX STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div class="upper-sec">
+                <img src="images/download.jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Mirage</h4></div>
+                <div><p>Some Else</p></div>
+              </div>
+            </div>
+            <div class="playlist-icon">
+              <a>
+                <i class="fas fa-ellipsis-h">
+                  <div class="queue-all-content">
+                    <div class="queue-content">
+                      <h3>Playlists</h3>
+                      <hr />
+                    </div>
+                    <div class="queue-content">
+                      <h3>Favourite Songs</h3>
+                    </div>
+                  </div>
+                </i></a
+              >
+              <p>4:44</p>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV SIX ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV SEVEN STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div class="upper-sec">
+                <img src="images/download (3).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-icon">
+              <a>
+                <i class="fas fa-ellipsis-h">
+                  <div class="queue-all-content">
+                    <div class="queue-content">
+                      <h3>Playlists</h3>
+                      <hr />
+                    </div>
+                    <div class="queue-content">
+                      <h3>Favourite Songs</h3>
+                    </div>
+                  </div>
+                </i></a
+              >
+              <p>4:44</p>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV SEVEN ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV EIGHT STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div class="upper-sec">
+                <img src="images/download (4).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>New Skin</h4></div>
+                <div><p>Flumee</p></div>
+              </div>
+            </div>
+            <div class="playlist-icon">
+              <a>
+                <i class="fas fa-ellipsis-h">
+                  <div class="queue-all-content">
+                    <div class="queue-content">
+                      <h3>Playlists</h3>
+                      <hr />
+                    </div>
+                    <div class="queue-content">
+                      <h3>Favourite Songs</h3>
+                    </div>
+                  </div>
+                </i></a
+              >
+              <p>4:44</p>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV EIGHT ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV NINE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div class="upper-sec">
+                <img src="images/download (2).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-icon">
+              <a>
+                <i class="fas fa-ellipsis-h">
+                  <div class="queue-all-content">
+                    <div class="queue-content">
+                      <h3>Playlists</h3>
+                      <hr />
+                    </div>
+                    <div class="queue-content">
+                      <h3>Favourite Songs</h3>
+                    </div>
+                  </div>
+                </i></a
+              >
+              <p>4:44</p>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV NINE ENDS -->
+        </div>
+        <!-- ASIDE TWO SECTION PLAYLISTS ALL DIV ENDS -->
+        <!-- ASIDE TWO SECTION PLAYLISTS ENDS -->
+        <!-- ASIDE SECTION TWO ENDS -->
+
+        <!-- AGAIN ASIDE SECTION TWO STARTS -->
+        <!-- AGAIN ASIDE SECTION HEADING STARTS -->
+        <div class="aside-section-header">
+          <div class="queue-white">
+            <h2>Recently Played &nbsp; <i class="fas fa-bars"></i></h2>
+          </div>
+          <div class="queue-green">
+            <div class="recently-view">
+              <a href="index.html"
+                ><h4>
+                  View All
+                  <div class="hidden-dropdown">
+                    <div class="dropdown-content">
+                      <div><i class="fas fa-play"></i></div>
+                      <div><h4>Play Now</h4></div>
+                    </div>
+                    <hr />
+                    <div class="dropdown-content">
+                      <div><i class="fas fa-plus"></i></div>
+                      <div><h4>Add To Queue</h4></div>
+                    </div>
+                    <hr />
+                    <div class="dropdown-content">
+                      <div>
+                        <i class="fas fa-indent" style="padding: 11px"></i>
+                      </div>
+                      <div><h4>Add To Favourites</h4></div>
+                    </div>
+                    <hr />
+                    <div class="dropdown-content">
+                      <div><i class="fas fa-info-circle"></i></div>
+                      <div><h4>Get Info</h4></div>
+                    </div>
+                  </div>
+                </h4></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- AGAIN ASIDE SECTION HEADING ENDS -->
+
+        <!-- AGAIN ASIDE TWO SECTION PLAYLISTS STARTS -->
+        <!-- AGAIN ASIDE TWO SECTION PLAYLISTS ALL DIV STARTS -->
+        <div class="aside-all-playlist">
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV ONE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>01</p></div>
+              <div class="aside-two-botom-sec">
+                <img src="images/download (2).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Mirage</h4></div>
+                <div><p>Some Else</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV ONE ENDS -->
+
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV TWO STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>02</p></div>
+              <div class="aside-two-botom-sec">
+                <img src="images/download.jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV TWO ENDS -->
+
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV THREE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>03</p></div>
+              <div class="aside-two-botom-sec">
+                <img src="images/download (3).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>New Skin</h4></div>
+                <div><p>Flumee</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV THREE ENDS -->
+
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV FOUR STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>04</p></div>
+              <div class="aside-two-botom-sec">
+                <img src="images/download (4).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV FOUR ENDS -->
+
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV FIVE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>05</p></div>
+              <div class="aside-two-botom-sec">
+                <img src="images/download (2).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>New Skin</h4></div>
+                <div><p>Flume</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV FIVE ENDS -->
+
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV SIX STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>06</p></div>
+              <div class="aside-two-botom-sec">
+                <img src="images/download.jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Mirage</h4></div>
+                <div><p>Some Else</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV SIX ENDS -->
+
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV SEVEN STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>07</p></div>
+              <div class="aside-two-botom-sec">
+                <img src="images/download (3).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV SEVEN ENDS -->
+
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV EIGHT STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>08</p></div>
+              <div class="aside-two-botom-sec">
+                <img src="images/download (4).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>New Skin</h4></div>
+                <div><p>Flumee</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV EIGHT ENDS -->
+
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV NINE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>09</p></div>
+              <div class="aside-two-botom-sec">
+                <img src="images/download (2).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- AGAIN ASIDE TWO SECTION PLAYLISTS DIV NINE ENDS -->
+        </div>
+        <!-- AGAIN ASIDE TWO SECTION PLAYLISTS ALL DIV ENDS -->
+      </div>
+      <!-- ASIDE SECTION TWO ENDS -->
+      <!-- AGAIN ASIDE SECTION TWO STARTS -->
+    </main>
+    <!-- MAIN SECTION ENDS -->
+
+    <!-- FOOTER SECTION STARTS -->
+    <!-- FOOTER FIRST SECTION STARTS -->
+    <footer id="footer-section">
+      <div class="all-footer-portions">
+        <div class="footer-portion-one">
+          <div class="footer-img-with-content">
+            <div>
+              <img src="images/download (2).jpg" />
+            </div>
+            <div class="footer-img-text">
+              <div><h4>Imagine by John</h4></div>
+              <div><p>John Lennon</p></div>
+            </div>
+          </div>
+          <div class="footer-img-icons">
+            <div class="footer-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+            <div>
+              <a><i class="fas fa-ban"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER FIRST SECTION ENDS -->
+
+        <!-- FOOTER SECOND SECTION STARTS -->
+        <div class="footer-control-features">
+          <div class="footer-sec-controls">
+            <div>
+              <a><i class="fas fa-random"></i></a>
+            </div>
+            <div>
+              <a><i class="fas fa-step-backward"></i></a>
+            </div>
+            <div>
+              <a><i class="far fa-pause-circle"></i></a>
+            </div>
+            <div>
+              <a><i class="fas fa-step-forward"></i></a>
+            </div>
+            <div>
+              <a><i class="fas fa-retweet"></i></a>
+            </div>
+          </div>
+          <div class="footer-control-range">
+            <div class="footer-range-text"><p>1:39</p></div>
+            <div class="footer-range">
+              <input
+                type="range"
+                min="0"
+                max="100"
+                class="rangebar"
+                id="myrange"
+              />
+            </div>
+            <div class="footer-range-text"><p>4:44</p></div>
+          </div>
+        </div>
+        <!-- FOOTER SECOND SECTION ENDS -->
+
+        <!-- FOOTER THIRD SECTION STARTS -->
+        <div class="footer-extra-features">
+          <div>
+            <a><i class="fas fa-indent"></i></a>
+          </div>
+          <div>
+            <a><i class="fas fa-laptop"></i></a>
+          </div>
+          <div>
+            <a><i class="fas fa-volume-up"></i></a>
+          </div>
+          <div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="rangebar"
+              id="myrange"
+            />
+          </div>
+          <div>
+            <a><i class="fas fa-expand-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER THIRD SECTION ENDS -->
+    <!-- FOOTER SECTION ENDS -->
+
+    <!-- SCRIPT LINK FOR HAMBURGER ICON STARTS -->
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      $('#queue-hng').click(function () {
+        $('#main').css('display', 'none');
+      });
+    </script>
+    <!-- SCRIPT LINK FOR HAMBURGER ICON ENDS -->
+  </body>
+  <!-- BODY SECTION ENDS -->
+</html>
+<!-- HTML ENDS -->

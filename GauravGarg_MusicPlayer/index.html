@@ -1,0 +1,1056 @@
+<!-- Description Of The Project:-
+
+This Music Player Project is Made By Gaurav Garg....
+
+For Innovation I use Hamburger Icon As Well As Social Media Icons and lot more Icons ......In Hamburger I used Little Bit Of JavaScript By Myself....
+
+I Should Use Proper Comments According To The Requirements....
+
+I give my best for Code Quality like proper Indentation and Space where it required...
+
+Proper Responsiveness By using Media Queries at different Breakpoints as well as Hamburger Icon.....
+
+Complete single playlists screen....
+
+Complete Bottom Music Player....
+
+Complete Home screen Carousel....
+
+Complete Home screen layout.... -->
+
+<!-- HTML STARTS -->
+<!-- DOCTYPE SHOWS THAT IT IS HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD STARTS -->
+  <head>
+    <!--METADATA VIEWPORT STARTS AND USED FOR MULTIPLE DEVICES WIDTH-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- METADATA VIEWPORT ENDS -->
+
+    <!-- TITLE STARTS -->
+    <!-- LINK FOR TITLE ICON STARTS -->
+    <link rel="shortcut icon" href="./images/disc.svg" />
+    <!-- LINK FOR TITLE ICON ENDS -->
+    <title>Ninja Tunes</title>
+    <!-- TITLE ENDS -->
+
+    <!-- FONT AWESOME CDN LINK STARTS-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- FONT AWESOME CDN LINK ENDS -->
+
+    <!-- CSS FILE LINK STARTS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS FILE LINK ENDS -->
+  </head>
+  <!-- HEAD ENDS -->
+
+  <!-- BODY SECTION STARTS -->
+  <body>
+    <!-- HEADER SECTION STARTS -->
+    <nav id="navbar-section">
+      <!-- Hamburger Starts -->
+      <div class="hamburger">
+        <div id="menu-bar">
+          <div id="menu" id="button" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+          <ul class="nav" id="nav">
+            <li><a href="#">Home</a></li>
+            <li id="queue-hng">
+              <a href="#latest-english-section">Hollywood</a>
+            </li>
+            <li><a href="#latest-hin-section">Bollywood</a></li>
+          </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+      </div>
+      <!-- Hamburger Ends -->
+
+      <!-- HEADER LOGO SECTION STARTS -->
+      <a href="#">
+        <div class="navbar-logo-portion">
+          <!-- NAVBAR LOGO IMAGE STARTS -->
+          <div class="navbar-logo"><img src="images/disc.png" /></div>
+          <!-- NAVBAR LOGO IMAGE ENDS -->
+
+          <!-- NAVBAR LOGO IMAGE TEXT STARTS -->
+          <div class="navbar-logo-text">
+            <p>Ninja</p>
+            <h3>Studio</h3>
+          </div>
+          <!-- NAVBAR LOGO IMAGE TEXT ENDS -->
+        </div>
+      </a>
+      <!-- HEADER LOGO SECTION ENDS -->
+
+      <!-- NAVBAR BLOCK TEXT STARTS -->
+      <div class="navbar-block-list">
+        <a href="favourite.html" target="_blank">
+          <h2>Favourite</h2>
+        </a>
+      </div>
+      <!-- NAVBAR BLOCK TEXT ENDS -->
+
+      <!-- SEARCH BAR STARTS -->
+      <div class="searchbar-section">
+        <!-- SEARCH BAR INPUT STARTS -->
+        <input type="search" id="navbar-search-bar" placeholder="Search" />
+        <!-- SEARCH BAR INPUT ENDS -->
+
+        <!-- SEARCH BAR ICONS STARTS -->
+        <div class="navbar-icons">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+          <span class="mic-icon"><i class="fas fa-microphone"></i></span>
+        </div>
+        <!-- SEARCH BAR ICONS ENDS -->
+      </div>
+      <!-- SEARCH BAR ENDS -->
+
+      <!-- BELL ICON STARTS -->
+      <div class="bell-icon">
+        <i class="fas fa-bell"></i>
+      </div>
+      <!-- BELL ICON ENDS -->
+
+      <!-- NAVBAR_PROFILE_PIC STARTS -->
+      <div class="navbar-profile-pic">
+        <a href="#">
+          <img src="images/1609508674549.jpg" id="profile-img" />
+        </a>
+      </div>
+      <!-- NAVBAR_PROFILE_PIC ENDS -->
+    </nav>
+    <!-- HEADER SECTION ENDS -->
+
+    <!-- MAIN SECTION STARTS -->
+    <main id="main-section">
+      <!-- ASIDE SECTION ONE STARTS -->
+      <div class="aside-sec1">
+        <!-- CAROUSEL SECTION STARTS -->
+        <div class="carousel">
+          <!-- CAROUSEL IMAGE ONE STARTS -->
+          <div class="carousel-1 carousel-imgs">
+            <img class="carousel-flex-img" src="images/img1.jpg" alt="" />
+          </div>
+          <!-- CAROUSEL IMAGE ONE ENDS -->
+
+          <!-- CAROUSEL IMAGE TWO STARTS -->
+          <div class="carousel-3 carousel-imgs">
+            <img class="carousel-flex-img" src="images/img3.jpg" alt="" />
+          </div>
+          <!-- CAROUSEL IMAGE TWO ENDS -->
+
+          <!-- CAROUSEL IMAGE THREE STARTS -->
+          <div class="carousel-2 carousel-imgs">
+            <img class="carousel-flex-img" src="images/img2.jpg" alt="" />
+          </div>
+          <!-- CAROUSEL IMAGE THREE ENDS -->
+        </div>
+        <!-- CAROUSEL SECTION ENDS -->
+
+        <!-- LATEST RELEASE SECTION STARTS -->
+        <div class="latest-release-section">
+          <!-- LATEST RELEASE SECTION HEADING STARTS -->
+          <a href="favourite.html" target="_blank">
+            <h2>
+              Latest Release Songs &nbsp; <i class="fas fa-ellipsis-h"></i>
+            </h2>
+          </a>
+          <!-- LATEST RELEASE SECTION HEADING ENDS -->
+
+          <!-- LATEST RELEASE SECTION ALL DIV STARTS -->
+          <div class="latest-release-section-pictures">
+            <!-- LATEST RELEASE SECTION DIV ONE STARTS -->
+            <div class="latest-release-picture">
+              <!-- LATEST RELEASE IMAGE STARTS -->
+              <div class="latest-release-img">
+                <img src="images/download.jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- LATEST RELEASE IMAGE ENDS -->
+
+              <!-- LATEST RELEASE TEXT STARTS -->
+              <div class="latest-release-content">
+                <h3>Onism</h3>
+                <p>AUG 11,2017</p>
+              </div>
+              <!-- LATEST RELEASE TEXT ENDS -->
+
+              <!-- LATEST RELEASE ICONS STARTS -->
+              <div>
+                <div class="know-more">
+                  <a>
+                    <i class="fas fa-ellipsis-h">
+                      <!-- LATEST RELEASE DROPDOWN STARTS -->
+                      <div class="hidden-dropdown">
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-play"></i></div>
+                          <div><h4>Play Now</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-plus"></i></div>
+                          <div><h4>Add To Queue</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div>
+                            <i class="fas fa-indent" style="padding: 11px"></i>
+                          </div>
+                          <div><h4>Add To Favourites</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-info-circle"></i></div>
+                          <div><h4>Get Info</h4></div>
+                        </div>
+                      </div>
+                      <!-- LATEST RELEASE DROPDOWN ENDS -->
+                    </i>
+                  </a>
+                </div>
+                <div class="song-time">
+                  <h5>4:44</h5>
+                </div>
+              </div>
+              <!-- LATEST RELEASE ICONS ENDS -->
+            </div>
+            <!-- LATEST RELEASE SECTION DIV ONE ENDS -->
+
+            <!-- LATEST RELEASE SECTION DIV TWO STARTS -->
+            <div class="latest-release-picture">
+              <!-- -- LATEST RELEASE IMAGE STARTS  -->
+              <div class="latest-release-img">
+                <img src="images/download (2).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- LATEST RELEASE IMAGE ENDS -->
+
+              <!-- LATEST RELEASE TEXT STARTS -->
+              <div class="latest-release-content">
+                <h3>Libaas</h3>
+                <p>SEP 11,2020</p>
+              </div>
+              <!-- LATEST RELEASE TEXT ENDS -->
+
+              <!-- LATEST RELEASE ICONS STARTS -->
+              <div>
+                <div class="know-more">
+                  <a>
+                    <i class="fas fa-ellipsis-h">
+                      <!-- LATEST RELEASE DROPDOWN STARTS -->
+                      <div class="hidden-dropdown">
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-play"></i></div>
+                          <div><h4>Play Now</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-plus"></i></div>
+                          <div><h4>Add To Queue</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div>
+                            <i class="fas fa-indent" style="padding: 11px"></i>
+                          </div>
+                          <div><h4>Add To Favourites</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-info-circle"></i></div>
+                          <div><h4>Get Info</h4></div>
+                        </div>
+                      </div>
+                      <!-- LATEST RELEASE DROPDOWN ENDS -->
+                    </i>
+                  </a>
+                </div>
+                <div class="song-time">
+                  <h5>4:44</h5>
+                </div>
+              </div>
+              <!-- LATEST RELEASE ICONS ENDS -->
+            </div>
+            <!-- LATEST RELEASE SECTION DIV TWO ENDS -->
+
+            <!-- LATEST RELEASE SECTION DIV THREE STARTS -->
+            <div class="latest-release-picture">
+              <!-- -- LATEST RELEASE IMAGE STARTS  -->
+              <div class="latest-release-img">
+                <img src="images/download (3).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- -- LATEST RELEASE IMAGE ENDS  -->
+
+              <!-- LATEST RELEASE TEXT STARTS -->
+              <div class="latest-release-content">
+                <h3>Toxic</h3>
+                <p>OCT 11,2017</p>
+              </div>
+              <!-- LATEST RELEASE TEXT ENDS -->
+
+              <!-- LATEST RELEASE ICONS STARTS -->
+              <div>
+                <div class="know-more">
+                  <a>
+                    <i class="fas fa-ellipsis-h">
+                      <!-- LATEST RELEASE DROPDOWN STARTS -->
+                      <div class="hidden-dropdown">
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-play"></i></div>
+                          <div><h4>Play Now</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-plus"></i></div>
+                          <div><h4>Add To Queue</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div>
+                            <i class="fas fa-indent" style="padding: 11px"></i>
+                          </div>
+                          <div><h4>Add To Favourites</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-info-circle"></i></div>
+                          <div><h4>Get Info</h4></div>
+                        </div>
+                      </div>
+                      <!-- LATEST RELEASE DROPDOWN ENDS -->
+                    </i>
+                  </a>
+                </div>
+                <div class="song-time">
+                  <h5>4:44</h5>
+                </div>
+              </div>
+              <!-- LATEST RELEASE ICONS ENDS -->
+            </div>
+            <!-- LATEST RELEASE SECTION DIV THREE ENDS -->
+
+            <!-- LATEST RELEASE SECTION DIV FOUR STARTS -->
+            <div class="latest-release-picture">
+              <!-- -- LATEST RELEASE IMAGE STARTS  -->
+              <div class="latest-release-img">
+                <img src="images/download.jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- -- LATEST RELEASE IMAGE ENDS  -->
+
+              <!-- LATEST RELEASE TEXT STARTS -->
+              <div class="latest-release-content">
+                <h3>Super</h3>
+                <p>NOV 11,2017</p>
+              </div>
+              <!-- LATEST RELEASE TEXT ENDS -->
+
+              <!-- LATEST RELEASE ICONS STARTS -->
+              <div>
+                <div class="know-more">
+                  <a>
+                    <i class="fas fa-ellipsis-h">
+                      <!-- LATEST RELEASE DROPDOWN STARTS -->
+                      <div class="hidden-dropdown">
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-play"></i></div>
+                          <div><h4>Play Now</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-plus"></i></div>
+                          <div><h4>Add To Queue</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div>
+                            <i class="fas fa-indent" style="padding: 11px"></i>
+                          </div>
+                          <div><h4>Add To Favourites</h4></div>
+                        </div>
+                        <hr />
+                        <div class="dropdown-content">
+                          <div><i class="fas fa-info-circle"></i></div>
+                          <div><h4>Get Info</h4></div>
+                        </div>
+                      </div>
+                      <!-- LATEST RELEASE DROPDOWN ENDS -->
+                    </i>
+                  </a>
+                </div>
+                <div class="song-time">
+                  <h5>4:44</h5>
+                </div>
+              </div>
+              <!-- LATEST RELEASE ICONS ENDS -->
+            </div>
+            <!-- LATEST RELEASE SECTION DIV FOUR ENDS -->
+          </div>
+          <!-- LATEST RELEASE SECTION ALL DIV ENDS -->
+        </div>
+        <!-- LATEST RELEASE SECTION ENDS -->
+
+        <!-- POPULAR ARTISTS SECTION STARTS -->
+        <div id="popular-artists-section">
+          <!-- POPULAR ARTISTS SECTION HEADING STARTS -->
+          <a href="favourite.html" target="_blank"
+            ><h2>
+              Popular Artists &nbsp; <i class="fas fa-calendar-check"></i></h2
+          ></a>
+          <!-- POPULAR ARTISTS SECTION HEADING ENDS -->
+
+          <!-- POPULAR ARTISTS ALL DIV STARTS -->
+          <div class="popular-artists-portion">
+            <!-- POPULAR ARTISTS DIV ONE STARTS -->
+            <div class="popular-artists-pic">
+              <img src="images/download (1).jpg" />
+              <h5>Ed Sheeran</h5>
+              <div class="artists-play-btn">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <!-- POPULAR ARTISTS DIV ONE ENDS -->
+
+            <!-- POPULAR ARTISTS DIV TWO STARTS -->
+            <div class="popular-artists-pic">
+              <img src="images/download (9).jpg" />
+              <h5>Luis Fonsi</h5>
+              <div class="artists-play-btn">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <!-- POPULAR ARTISTS DIV TWO ENDS -->
+
+            <!-- POPULAR ARTISTS DIV THREE STARTS -->
+            <div class="popular-artists-pic">
+              <img src="images/download (8).jpg" />
+              <h5>Zayn Malik</h5>
+              <div class="artists-play-btn">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <!-- POPULAR ARTISTS DIV THREE ENDS -->
+
+            <!-- POPULAR ARTISTS DIV FOUR STARTS -->
+            <div class="popular-artists-pic">
+              <img src="images/download (10).jpg" />
+              <h5>Shakira Isabel</h5>
+              <div class="artists-play-btn">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <!-- POPULAR ARTISTS DIV FOUR ENDS -->
+
+            <!-- POPULAR ARTISTS DIV FIVE STARTS -->
+            <div class="popular-artists-pic">
+              <img src="images/download (11).jpg" />
+              <h5>Imagine Dragon</h5>
+              <div class="artists-play-btn">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <!-- POPULAR ARTISTS DIV FIVE ENDS -->
+
+            <!-- POPULAR ARTISTS DIV SIX STARTS -->
+            <div class="popular-artists-pic">
+              <img src="images/images (1).jpg" />
+              <h5>Bruno Mars</h5>
+              <div class="artists-play-btn">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <!-- POPULAR ARTISTS DIV SIX ENDS -->
+          </div>
+          <!-- POPULAR ARTISTS ALL DIV ENDS -->
+        </div>
+        <!-- POPULAR ARTISTS SECTION ENDS -->
+
+        <!-- GRADIENT SECTION ONE STARTS -->
+        <div class="gradient-section-one">
+          <!-- GRADIENT SECTION ONE DIV ONE STARTS -->
+          <div class="gradient-one-pic station-pic">
+            <img src="images/station.png" />
+          </div>
+          <!-- GRADIENT SECTION ONE DIV ONE ENDS -->
+
+          <!-- GRADIENT SECTION ONE DIV TWO STARTS -->
+          <div class="gradient-one-pic filter-img-four">
+            <img src="images/download (1).jpg" />
+            <div><h3>Love</h3></div>
+          </div>
+          <!-- GRADIENT SECTION ONE DIV TWO ENDS -->
+
+          <!-- GRADIENT SECTION ONE DIV THREE STARTS -->
+          <div class="gradient-one-pic filter-img-five">
+            <img src="images/download (9).jpg" />
+            <div><h3>Retro</h3></div>
+          </div>
+          <!-- GRADIENT SECTION ONE DIV THREE ENDS -->
+
+          <!-- GRADIENT SECTION ONE DIV FOUR STARTS -->
+          <div class="gradient-one-pic filter-img-six">
+            <img src="images/download (8).jpg" />
+            <div><h3>Chill</h3></div>
+          </div>
+          <!-- GRADIENT SECTION ONE DIV FOUR ENDS -->
+
+          <!-- GRADIENT SECTION ONE DIV FIVE STARTS -->
+          <div class="gradient-one-pic filter-img-seven">
+            <img src="images/download (10).jpg" />
+            <div><h3>Work</h3></div>
+          </div>
+          <!-- GRADIENT SECTION ONE DIV FIVE ENDS -->
+
+          <!-- GRADIENT SECTION ONE DIV SIX STARTS -->
+          <div class="gradient-one-pic filter-img-eight">
+            <img src="images/download (8).jpg" />
+            <div><h3>Rock</h3></div>
+          </div>
+          <!-- GRADIENT SECTION ONE DIV SIX ENDS -->
+
+          <!-- GRADIENT SECTION ONE DIV SEVEN STARTS -->
+          <div class="gradient-one-pic filter-img-nine">
+            <img src="images/images (1).jpg" />
+            <div><h3>Pop</h3></div>
+          </div>
+          <!-- GRADIENT SECTION ONE DIV SEVEN ENDS -->
+        </div>
+        <!-- GRADIENT SECTION ONE ENDS -->
+
+        <!-- GRADIENT SECTION TWO STARTS -->
+        <div class="gradient-section-two">
+          <!-- GRADIENT SECTION TWO DIV ONE STARTS -->
+          <div class="gradient-two-pic filter-img-one">
+            <img src="images/img1.jpg" alt="" />
+            <div class="gradient-text">
+              <h2>Party</h2>
+            </div>
+          </div>
+          <!-- GRADIENT SECTION TWO DIV ONE ENDS -->
+
+          <!-- GRADIENT SECTION TWO DIV TWO STARTS -->
+          <div class="gradient-two-pic">
+            <img
+              src="https://www.desiblitz.com/wp-content/uploads/2020/04/Neha-Kakkar-says-Bollywood-doesn%E2%80%99t-Pay-Singers-for-Songs-f.jpg"
+              alt=""
+            />
+            <div class="gradient-text">
+              <h2>Electronic</h2>
+            </div>
+          </div>
+          <!-- GRADIENT SECTION TWO DIV TWO ENDS -->
+
+          <!-- GRADIENT SECTION TWO DIV THREE STARTS -->
+          <div class="gradient-two-pic filter-img-three">
+            <img src="images/img3.jpg" alt="" />
+            <div class="gradient-text">
+              <h2>Road Trip</h2>
+            </div>
+          </div>
+          <!-- GRADIENT SECTION TWO DIV THREE ENDS -->
+        </div>
+        <!-- GRADIENT SECTION TWO ENDS -->
+
+        <!-- LATEST HOLLYWOOD SECTION STARTS -->
+        <div id="latest-english-section">
+          <!-- LATEST HOLLYWOOD SECTION HEADING STARTS -->
+          <a href="favourite.html" target="_blank"
+            ><h2>Latest Hollywood Songs &nbsp; <i class="fas fa-table"></i></h2
+          ></a>
+          <!-- LATEST HOLLYWOOD SECTION HEADING ENDS -->
+
+          <!-- LATEST HOLLYWOOD SECTION ALL DIV STARTS -->
+          <div class="latest-english-portion">
+            <!-- LATEST HOLLYWOOD SECTION DIV ONE STARTS -->
+            <div class="latest-eng-pic">
+              <img src="images/download (4).jpg" />
+              <div class="latest-pic-text">
+                <div><h3>Onism</h3></div>
+                <div><p>AUG 11,2017</p></div>
+              </div>
+            </div>
+            <!-- LATEST HOLLYWOOD SECTION DIV ONE ENDS -->
+
+            <!-- LATEST HOLLYWOOD SECTION DIV TWO STARTS -->
+            <div class="latest-eng-pic">
+              <img src="images/download (3).jpg" />
+              <div class="latest-pic-text">
+                <div><h3>Toxic</h3></div>
+                <div><p>OCT 11,2017</p></div>
+              </div>
+            </div>
+            <!-- LATEST HOLLYWOOD SECTION DIV TWO ENDS -->
+
+            <!-- LATEST HOLLYWOOD SECTION DIV THREE STARTS -->
+            <div class="latest-eng-pic">
+              <img src="images/download (2).jpg" />
+              <div class="latest-pic-text">
+                <div><h3>Onism</h3></div>
+                <div><p>AUG 11,2017</p></div>
+              </div>
+            </div>
+            <!-- LATEST HOLLYWOOD SECTION DIV THREE ENDS -->
+
+            <!-- LATEST HOLLYWOOD SECTION DIV FOUR STARTS -->
+            <div class="latest-eng-pic">
+              <img src="images/download (4).jpg" />
+              <div class="latest-pic-text">
+                <div><h3>Toxic</h3></div>
+                <div><p>OCT 11,2017</p></div>
+              </div>
+            </div>
+            <!-- LATEST HOLLYWOOD SECTION DIV FOUR ENDS -->
+
+            <!-- LATEST HOLLYWOOD SECTION DIV FIVE STARTS -->
+            <div class="latest-eng-pic">
+              <img src="images/download.jpg" />
+              <div class="latest-pic-text">
+                <div><h3>Onism</h3></div>
+                <div><p>AUG 11,2017</p></div>
+              </div>
+            </div>
+            <!-- LATEST HOLLYWOOD SECTION DIV FIVE ENDS -->
+          </div>
+          <!-- LATEST HOLLYWOOD SECTION ALL DIV ENDS -->
+        </div>
+        <!-- LATEST HOLLYWOOD SECTION ENDS -->
+
+        <!-- LATEST BOLLYWOOD SECTION STARTS -->
+        <div id="latest-english-section">
+          <!-- LATEST BOLLYWOOD SECTION HEADING STARTS -->
+          <a href="favourite.html" target="_blank"
+            ><h2>Latest Bollywood Songs &nbsp; <i class="fas fa-table"></i></h2
+          ></a>
+          <!-- LATEST BOLLYWOOD SECTION HEADING ENDS -->
+
+          <!-- LATEST BOLLYWOOD SECTION ALL DIV STARTS -->
+          <div class="latest-english-portion">
+            <!-- LATEST BOLLYWOOD SECTION DIV ONE STARTS -->
+            <div class="latest-eng-pic latest-hin-pic">
+              <img src="images/download (2).jpg" />
+              <div class="latest-pic-text">
+                <div><h3>Libaas</h3></div>
+                <div><p>SEP 11,2020</p></div>
+              </div>
+            </div>
+            <!-- LATEST BOLLYWOOD SECTION DIV ONE ENDS -->
+
+            <!-- LATEST BOLLYWOOD SECTION DIV TWO STARTS -->
+            <div class="latest-eng-pic latest-hin-pic">
+              <img src="images/download (4).jpg" />
+              <div class="latest-pic-text">
+                <div><h3>Superstar</h3></div>
+                <div><p>NOV 11,2017</p></div>
+              </div>
+            </div>
+            <!-- LATEST BOLLYWOOD SECTION DIV TWO ENDS -->
+
+            <!-- LATEST BOLLYWOOD SECTION DIV THREE STARTS -->
+            <div class="latest-eng-pic latest-hin-pic">
+              <img src="images/download (3).jpg" />
+              <div class="latest-pic-text">
+                <div><h3>Libaas</h3></div>
+                <div><p>SEP 11,2020</p></div>
+              </div>
+            </div>
+            <!-- LATEST BOLLYWOOD SECTION DIV THREE ENDS -->
+
+            <!-- LATEST BOLLYWOOD SECTION DIV FOUR STARTS -->
+            <div class="latest-eng-pic latest-hin-pic">
+              <img src="images/download (4).jpg" />
+              <div class="latest-pic-text">
+                <div><h3>Superstar</h3></div>
+                <div><p>NOV 11,2017</p></div>
+              </div>
+            </div>
+            <!-- LATEST BOLLYWOOD SECTION DIV FOUR ENDS -->
+
+            <!-- LATEST BOLLYWOOD SECTION DIV FIVE STARTS -->
+            <div class="latest-eng-pic latest-hin-pic">
+              <img src="images/download.jpg" />
+              <div class="latest-pic-text">
+                <div><h3>Libaas</h3></div>
+                <div><p>SEP 11,2020</p></div>
+              </div>
+            </div>
+            <!-- LATEST BOLLYWOOD SECTION DIV FIVE ENDS -->
+          </div>
+          <!-- LATEST BOLLYWOOD SECTION ALL DIV ENDS -->
+        </div>
+        <!-- LATEST BOLLYWOOD SECTION ENDS -->
+      </div>
+      <!-- ASIDE SECTION ONE ENDS -->
+
+      <!-- ASIDE SECTION TWO STARTS -->
+      <div class="aside-section-two" id="aside-two-sec">
+        <!-- ASIDE SECTION TWO HEADING STARTS -->
+        <div class="aside-section-header">
+          <div class="queue-white">
+            <h2>Queue &nbsp;<i class="fas fa-bars"></i></h2>
+          </div>
+          <div class="queue-green">
+            <div>
+              <a><h4>Queue</h4></a>
+            </div>
+            <div class="queue-hidden-dropdown">
+              <i class="fas fa-chevron-circle-down">
+                <!-- QUEUE DROPDOWN STARTS -->
+                <div class="queue-all-content">
+                  <div class="queue-content">
+                    <h3>Playlists</h3>
+                    <hr />
+                  </div>
+                  <div class="queue-content">
+                    <h3>Favourite Songs</h3>
+                  </div>
+                </div>
+                <!-- QUEUE DROPDOWN ENDS -->
+              </i>
+            </div>
+          </div>
+        </div>
+        <!-- ASIDE SECTION TWO HEADING ENDS -->
+
+        <!-- ASIDE TWO SECTION PLAYLISTS STARTS -->
+        <!-- ASIDE TWO SECTION PLAYLISTS ALL DIV STARTS -->
+        <div class="aside-all-playlist">
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV ONE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>01</p></div>
+              <div class="upper-sec">
+                <img src="images/download (2).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Mirage</h4></div>
+                <div><p>Some Else</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV ONE ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV TWO STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>02</p></div>
+              <div class="upper-sec">
+                <img src="images/download.jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV TWO ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV THREE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>03</p></div>
+              <div class="upper-sec">
+                <img src="images/download (3).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>New Skin</h4></div>
+                <div><p>Flumee</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV THREE ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV FOUR STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>04</p></div>
+              <div class="upper-sec">
+                <img src="images/download (4).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV FOUR ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV FIVE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>05</p></div>
+              <div class="upper-sec">
+                <img src="images/download (2).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>New Skin</h4></div>
+                <div><p>Flume</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV FIVE ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV SIX STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>06</p></div>
+              <div class="upper-sec">
+                <img src="images/download.jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Mirage</h4></div>
+                <div><p>Some Else</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV SIX ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV SEVEN STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>07</p></div>
+              <div class="upper-sec">
+                <img src="images/download (3).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV SEVEN ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV EIGHT STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>08</p></div>
+              <div class="upper-sec">
+                <img src="images/download (4).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>New Skin</h4></div>
+                <div><p>Flumee</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV EIGHT ENDS -->
+
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV NINE STARTS -->
+          <div class="aside-playlist">
+            <div class="playlist-img-content">
+              <div><p>09</p></div>
+              <div class="upper-sec">
+                <img src="images/download (2).jpg" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="aside-playlist-content">
+                <div><h4>Worry Us</h4></div>
+                <div><p>Rose Lowe</p></div>
+              </div>
+            </div>
+            <div class="playlist-heart">
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <!-- ASIDE TWO SECTION PLAYLISTS DIV NINE ENDS -->
+        </div>
+        <!-- ASIDE TWO SECTION PLAYLISTS ALL DIV ENDS -->
+        <!-- ASIDE TWO SECTION PLAYLISTS ENDS -->
+
+        <!-- ASIDE SECTION TWO SOCIAL ICONS STARTS -->
+        <div class="social-icons">
+          <h2>For Live Music</h2>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            onclick="alert('You Clicked On Facebook Button')"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            onclick="alert('You Clicked On Instagram Button')"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://twitter.com/?lang=en"
+            target="_blank"
+            onclick="alert('You Clicked On Twitter Button')"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+        <!-- ASIDE SECTION TWO SOCIAL ICONS ENDS -->
+      </div>
+      <!-- ASIDE SECTION TWO ENDS -->
+    </main>
+    <!-- MAIN SECTION ENDS -->
+
+    <!-- FOOTER SECTION STARTS -->
+    <!-- FOOTER FIRST SECTION STARTS -->
+    <footer id="footer-section">
+      <div class="all-footer-portions">
+        <div class="footer-portion-one">
+          <div class="footer-img-with-content">
+            <div>
+              <img src="images/download (2).jpg" />
+            </div>
+            <div class="footer-img-text">
+              <div><h4>Imagine by John</h4></div>
+              <div><p>John Lennon</p></div>
+            </div>
+          </div>
+          <div class="footer-img-icons">
+            <div>
+              <a><i class="fas fa-heart"></i></a>
+            </div>
+            <div>
+              <a><i class="fas fa-ban"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER FIRST SECTION ENDS -->
+
+        <!-- FOOTER SECOND SECTION STARTS -->
+        <div class="footer-control-features">
+          <div class="footer-sec-controls">
+            <div>
+              <a><i class="fas fa-random"></i></a>
+            </div>
+            <div>
+              <a><i class="fas fa-step-backward"></i></a>
+            </div>
+            <div>
+              <a><i class="far fa-pause-circle"></i></a>
+            </div>
+            <div>
+              <a><i class="fas fa-step-forward"></i></a>
+            </div>
+            <div>
+              <a><i class="fas fa-retweet"></i></a>
+            </div>
+          </div>
+          <div class="footer-control-range">
+            <div class="footer-range-text"><p>1:39</p></div>
+            <div class="footer-range">
+              <input
+                type="range"
+                min="0"
+                max="100"
+                class="rangebar"
+                id="myrange"
+              />
+            </div>
+            <div class="footer-range-text"><p>4:44</p></div>
+          </div>
+        </div>
+        <!-- FOOTER SECOND SECTION ENDS -->
+
+        <!-- FOOTER THIRD SECTION STARTS -->
+        <div class="footer-extra-features">
+          <div>
+            <a><i class="fas fa-indent"></i></a>
+          </div>
+          <div>
+            <a><i class="fas fa-laptop"></i></a>
+          </div>
+          <div>
+            <a><i class="fas fa-volume-up"></i></a>
+          </div>
+          <div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="rangebar"
+              id="myrange"
+            />
+          </div>
+          <div>
+            <a><i class="fas fa-expand-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER THIRD SECTION ENDS -->
+    <!-- FOOTER SECTION ENDS -->
+
+    <!-- SCRIPT LINK FOR HAMBURGER ICON STARTS -->
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      $('#queue-hng').click(function () {
+        $('#main').css('display', 'none');
+      });
+    </script>
+    <!-- SCRIPT LINK FOR HAMBURGER ICON ENDS -->
+  </body>
+  <!-- BODY SECTION ENDS -->
+</html>
+<!-- HTML ENDS -->
